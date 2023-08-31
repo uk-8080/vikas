@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>MY WEBSITE</title>
+  <style>
+    /* Reset some default styles */
+  body{
+   background-color:#000000;
+   background-size:auto;
+   background-position: ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100%;
+  }
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+ 
+  
+  
+}
+.nav-links a:hover{
+ color: #FF8C00;
+ }
+
+.nav-links li {
+  margin-right: 40px;
+  padding: 5px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media Query for mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color:dimgray;
+    width: 50%;
+    text-align:center;
+    height: 60%;
+    }
+  @media (max-width: 768px) {
+    .information{
+     margin-left: 100px;
+    }
+  }
+  .nav-links li {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+}
+.information{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#FF8C00;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.information a:hover{
+  color: #f0f0f0;
+
+}
+.personal{
+ margin: 100px;
+ color: #fff;
+  
+}
+.personal h1{
+  font-family: 'Times New Roman';
+  color: #FF8C00;
+}
+.personal h3 p {
+  font-family: sans-serif;
+  color: #fff;
+}
+@media (max-width: 768px){
+  .personal h1{
+    font-size:medium;
+  }
+  .personal{
+    margin: 30px;
+  }
+}
+@media (max-width:700px){
+  .information{
+   margin: 50px;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#FF8C00;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #219653;
+  color: #f0f0f0;
+}
+.buttonn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  margin: 20px;
+  color: white;
+  font-size: 16px;
+  border:1px solid #FF8C00;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon{
+  margin: 15px;
+ 
+ 
+}
+.fa-facebook{
+ color: #fff;
+ font-size: 14px;
+ padding: 5px;
+ background-color: #4267B2;
+ border-radius: 5px;
+ }
+ .fa-instagram{
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+  background-color:#ff2eb8;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ .fa-whatsapp{
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+  background-color: #25D366;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ .fa-twitter{
+  font-size: 14px;
+  padding: 5px;
+  background-color: #1DA1F2;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ .fa-envelope{
+  font-size: 14px;
+  padding: 5px;
+  background-color:#000000;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+ }
+ .about{
+  color: #fff;
+  margin-left: 50px;
+  display: flex;
+  border: 1px solid #fff;
+  width: 1450px;
+  background-color: #fff;
+  color: #000000;
+ }
+ .fa-user-group{
+  font-size: 50px;
+  margin-left: 100px;
+  margin: 20px;
+  color: #FF8C00;
+ }
+ .about pre{
+ font-size: 15px;
+ }
+ .about h2{
+  font-size: ;
+ }
+ .mii{
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 5px;
+  margin-left: 200px;
+ }
+ .hand{
+  display: flex;
+  background-color:#d6d6ff;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 20px;
+ }
+ .conn{
+  display: flex;
+  background-color:#d6d6ff;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 20px;
+ }
+ .fa-handshake{
+  font-size: 50px;
+  margin-left: 100px;
+  margin: 20px;
+  color: #FF8C00;
+ }
+ @media (max-width:700px){
+  .about{
+    margin:1px;
+    padding:1px;
+    font-size: 10px;
+    size: 15px;
+  }
+  .conn{
+    margin-left: 1px;
+  }
+  .conn pre{
+    font-size:6.5px;
+   
+  }
+ }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MY WEBSITE</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Appointment</a></li>
+      <li class="information"><a href="#">Information</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+  <div class="personal">
+    <h3>Hi i am..</h3>
+    <h1>UMESH KHEDEKAR..</h1>
+    <p>A full-stack developer is a developer or engineer who can build both <br>the front end and the back end of a website.</p>
+   <br><br> <button class="button">JOIN US</button> <button class="buttonn">Here Mi</button>
+   <div class="icon">
+   <a href="https://www.facebook.com/umesh.khedekar.796?mibextid=ZbWKwL "><i class="fa-brands fa-facebook"></i></a>
+   <a href="https://instagram.com/umesh.khedekar.796?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://wa.me/qr/EODRKGHUTJJVJ1"><i class="fa-brands fa-whatsapp"></i></a>
+   <i class="fa-brands fa-twitter"></i>
+ </div>
+  </div>
+  <div class="about">
+   <div class="conn">
+    <i class="fa-solid fa-user-group"></i>
+    <pre>Search for Web Designer Course at Teoma. Attractive Results.<br> Get More Results. Online Information. Popular Searches. Quality Results. <br>Find Answers.<br> Related Searches. Internet Information. Search Now.<br> Types: Home & Garden, Finance, Vehicles ,other.</pre>
+   </div>
+  <div class="hand">
+    <i class="fa-regular fa-handshake"></i>
+    <pre>Everything that you actually see on a website—the layout, <br>the positioning of text and images, colors, fonts, buttons,<br> and so on—are all factors that<br> the frontend developer must consider.</pre>
+  </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+</script>
+</html>
